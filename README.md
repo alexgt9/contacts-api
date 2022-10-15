@@ -1,24 +1,24 @@
-# MPWAR Todos
+# Your contacts
 
-Simple API to create todo lists [https://todos-mpwar.herokuapp.com](https://todos-mpwar.herokuapp.com).
+Simple API to create contacts lists [https://alexgt9-contacts.herokuapp.com](https://alexgt9-contacts.herokuapp.com).
 
-Each `:username` is a unique todo list
+Each `:username` is a unique contacts list
 
 ## Endpoints
 
-### Get todos
+### Get contacts
 
-`GET /users/:username/todos`
+`GET /users/:username/contacts`
 
 Response
 ```
 [
     {
         "id": 1,
-        "text": "Agarra la mochila",
-        "completed": false,
-        "author": ":username",
-        "createdAt": "2019-12-18T19:12:47.826Z"
+        "name": "Paco Pil",
+        "phone": "666777888",
+        "email": "paco.pil@example.com",
+        "createdAt": "2021-12-18T19:12:47.826Z"
     },
     {
         ...
@@ -26,32 +26,35 @@ Response
 ]
 ```
 
-### Post todo
+### Create contact
 
-`POST /users/:username/todos`
-
-```
-Body
-{
-    "text": "Agarra la sombrilla"
-}
-```
-
-### Edit ToDo
-
-`PATCH /users/:username/todos/:id`
+`POST /users/:username/contacts`
 
 ```
 Body
 {
-    "completed": true/false,
-    "text": "New text"
+    "name": "Paco Pil",
+    "phone": "666777888",
+    "email": "paco.pil@example.com"
 }
 ```
 
-### Delete ToDo
+### Edit contact
 
-`DELETE /users/:username/todos/:id`
+`PATCH /users/:username/contacts/:id`
+
+```
+Body
+{
+    "name": "New name",
+    "phone": "New phone",
+    "email": "New email"
+}
+```
+
+### Delete contact
+
+`DELETE /users/:username/contacts/:id`
 
 ## Deploying to Heroku
 
