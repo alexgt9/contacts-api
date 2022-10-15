@@ -1,0 +1,8 @@
+{
+  "name": "Contacts Simple API",
+  "description": "A simple api for Contacts's",
+  "repository": "https://github.com/alexgt9/node-contacts",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
