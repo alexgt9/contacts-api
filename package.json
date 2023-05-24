@@ -16,7 +16,6 @@
   },
   "keywords": [
     "node",
-    "heroku",
     "express"
   ],
   "license": "MIT"

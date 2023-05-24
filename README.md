@@ -1,6 +1,6 @@
 # Your contacts
 
-Simple API to create contacts lists [https://alexgt9-contacts.herokuapp.com](https://alexgt9-contacts.herokuapp.com).
+Simple API to create contacts lists.
 
 Each `:username` is a unique contacts list
 
@@ -56,17 +56,12 @@ Body
 
 `DELETE /users/:username/contacts/:id`
 
-## Deploying to Heroku
+## Deploying
 
-```
-$ git push heroku master
-$ heroku open
-```
+Just push and it will be automatically deployed
 
 ## Working locally
 
 ```
-$ heroku local
+$ npm run start
 ```
-
-Api will be available at [http://localhost:5000](http://localhost:5000)
