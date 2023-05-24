@@ -4,9 +4,9 @@ Simple API to create contacts lists.
 
 Each `:username` is a unique contacts list
 
-## Endpoints
+## Openapi/Swagger endpoints documentation
 
-Go to /api-docs/#/
+Go to [/api-docs/](/api-docs/)
 
 ## Deploying
 

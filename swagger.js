@@ -6,7 +6,7 @@
  *       name: username
  *       type: string
  *       required: true
- *       description: The user ID
+ *       description: The user ID. Each username contains an unique contact list
  *       in: path
  *     contactId:
  *       name: id

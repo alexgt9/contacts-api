@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "readme": "marked  --gfm --breaks -i README.md -o public/README.html"
+    "postinstall": "marked  --gfm --breaks -i README.md -o public/README.html"
   },
   "dependencies": {
     "cors": "^2.8.5",
