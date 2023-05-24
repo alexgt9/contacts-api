@@ -170,7 +170,7 @@ const options = {
       info: {
         title: "Simple Contacts API",
         version: "0.1.0",
-        description: "This is a simple CRUD API to manage contacts",
+        description: "This is a simple CRUD API to manage contacts.  The user 'aleh' contains some examples. The information stored in this API is not persistent. It will be deleted from time to time.",
       },
       servers: [
         {
