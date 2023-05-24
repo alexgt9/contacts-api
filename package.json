@@ -7,8 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "marked  --gfm --breaks -i README.md -o public/README.html"
+    "start": "node index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -21,8 +20,5 @@
     "node",
     "express"
   ],
-  "license": "MIT",
-  "devDependencies": {
-    "marked": "^5.0.2"
-  }
+  "license": "MIT"
 }

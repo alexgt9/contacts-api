@@ -20,7 +20,7 @@ const app = express()
   .use(express.static(path.join(__dirname, 'public')))
   .use(express.json())
   .get('/', (req, res) => {
-      res.redirect('README.html');
+      res.redirect('/api-docs');
   })
   /**
     * @openapi
