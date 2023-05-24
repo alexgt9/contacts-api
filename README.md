@@ -15,5 +15,6 @@ Just push and it will be automatically deployed
 ## Working locally
 
 ```
-$ npm run start
+$ npm run dev
 ```
+
