@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "description": "A sample Node.js app using Express 4",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "readme": "marked  --gfm --breaks -i README.md -o public/README.html"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.15.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
     "uuid": "^3.3.3"
   },
   "keywords": [
     "node",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "marked": "^5.0.2"
+  }
 }
