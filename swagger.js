@@ -1,3 +1,6 @@
+import swaggerUi from "swagger-ui-express";
+import swaggerJsdoc from "swagger-jsdoc";
+
 /**
  * @openapi
  * components:
@@ -44,3 +47,26 @@
  *         email: paco.pil@example.com
  *         createdAt: 2020-03-10T04:05:06.157Z
  */
+const options = {
+    definition: {
+        openapi: "3.0.0",
+        info: {
+            title: "Simple Contacts API",
+            version: "0.1.0",
+            description: "This is a simple CRUD API to manage contacts.  The user 'aleh' contains some examples. The information stored in this API is not persistent. It will be deleted from time to time.",
+        },
+    },
+    apis: ["./app.js", "./swagger.js"],
+};
+
+export function swaggerMiddleware(app) {
+    const specs = swaggerJsdoc(options);
+
+    app.use(
+        "/api-docs",
+        swaggerUi.serve,
+        swaggerUi.setup(specs, { 
+          customCssUrl: 'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.6.2/swagger-ui.css',
+        } )
+    );
+}
